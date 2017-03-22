@@ -1,5 +1,5 @@
 Name:               forklift
-Version:            0.1.0.0
+Version:            0.1.1.0
 Synopsis:           Perform arbitrary monadic computations in a worker thread.
 Description:
   Sometimes, you have a monadic computation @ComplicatedMonad a@ and
@@ -36,8 +36,9 @@ source-repository head
 
 Library
     hs-source-dirs:     src
-    build-depends:      base == 4.* , transformers >= 0.2 && < 0.4,
-                        stm == 2.2.*
+    build-depends:      base
+                      , transformers
+                      , stm
     extensions:         DeriveDataTypeable
     exposed-modules:    Control.Monad.ForkLift
 
